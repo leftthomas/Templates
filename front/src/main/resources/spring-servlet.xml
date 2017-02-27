@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+    <!-- 把标记了@Controller注解的类转换为bean -->
+    <context:component-scan base-package="com.left.action"/>
+
+    <aop:aspectj-autoproxy/>
+
+    <!-- 开启注解功能 -->
+
+    <bean
+            class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <!-- 解析json请求数据，将json转换为java对象-->
+                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+                <!--可以增加其他数据类型,请参考spring的API-->
+            </list>
+        </property>
+    </bean>
+
+    <!-- velocity视图解析器 -->
+    <bean id="velocityViewResolver"
+          class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+        <property name="cache" value="true"/>
+        <property name="prefix" value="/"/>
+        <property name="suffix" value=".vm"/>
+        <property name="exposeSpringMacroHelpers" value="true"/>
+        <!--是否使用spring对宏定义的支持-->
+        <property name="exposeRequestAttributes" value="true"/>
+        <!--是否开放request属性-->
+        <property name="requestContextAttribute" value="request"/>
+        <!--request属性引用名称-->
+        <property name="exposeSessionAttributes" value="true"/>
+        <!--是否开放session属性-->
+        <property name="contentType" value="text/html;charset=UTF-8"/>
+    </bean>
+
+    <!-- velocity环境配置 -->
+    <bean id="velocityConfig"
+          class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+        <!-- velocity模板路径 -->
+        <property name="resourceLoaderPath" value="/WEB-INF/page/"/>
+        <property name="velocityProperties">
+            <props>
+                <prop key="input.encoding">UTF-8</prop>
+                <prop key="output.encoding">UTF-8</prop>
+                <prop key="contentType">text/html;charset=UTF-8</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

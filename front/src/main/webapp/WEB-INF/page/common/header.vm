@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<!-- 加入百度数据统计 -->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?c45fa90663e53b1047f1ed21e15fe7a6";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<head>
+    <title>$title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href="/static/css/common/normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/css/common/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/static/css/common/header_style.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="/static/js/common/jquery.min.js"></script>
+</head>

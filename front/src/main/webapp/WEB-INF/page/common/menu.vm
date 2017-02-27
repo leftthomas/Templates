@@ -1,0 +1,20 @@
+<div class="header_style1">
+    <!-- start h_logo -->
+    <div class="logo">
+        <h1><a href="/">web_demo</a></h1>
+    </div>
+    <!-- start h_menu -->
+    <div class="h_menu">
+        <ul class="flexy-menu thick orange">
+            <li><a href="/choices/" class="scroll">精选</a></li>
+            <li><a href="/essays/" class="scroll">文章</a></li>
+            <li><a href="/pictures/" class="scroll">图片</a></li>
+            <li><a href="/videos/" class="scroll">视频</a></li>
+            <li><a href="/voices/" class="scroll">音频</a></li>
+            <li><a href="/search/" class="scroll">搜索</a></li>
+            <li><a href="/my/" class="scroll">我的</a></li>
+        </ul>
+    </div>
+    <!-- end h_menu -->
+    <div class="clear"></div>
+</div>

@@ -1,0 +1,230 @@
+#set($title="web_demo | 男生")
+
+#parse("common/header.vm")
+
+<link href="/static/css/demo.css" rel="stylesheet" type="text/css"/>
+<link href="/static/css/set2.css" rel="stylesheet" type="text/css"/>
+<script src="/static/js/essays_boy.js" type="text/javascript"></script>
+<body>
+<div class="container">
+    <div class="wrap">
+        #parse("common/menu.vm")
+    </div>
+
+    <header class="codrops-header">
+        <nav class="codrops-demos">
+            <a href="/essays/girl">女生</a>
+            <a class="current-demo" href="/essays/boy">男生</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-goliath">
+                <img src="/static/images/23.jpg" alt="img23"/>
+                <figcaption>
+                    <h2>Thoughtful <span>Goliath</span></h2>
+                    <p>When Goliath comes out, you should run.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-goliath">
+                <img src="/static/images/24.jpg" alt="img24"/>
+                <figcaption>
+                    <h2>Thoughtful <span>Goliath</span></h2>
+                    <p>When Goliath comes out, you should run.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-apollo">
+                <img src="/static/images/18.jpg" alt="img18"/>
+                <figcaption>
+                    <h2>Strong <span>Apollo</span></h2>
+                    <p>Apollo's last game of pool was so strange.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-apollo">
+                <img src="/static/images/22.jpg" alt="img22"/>
+                <figcaption>
+                    <h2>Strong <span>Apollo</span></h2>
+                    <p>Apollo's last game of pool was so strange.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-steve">
+                <img src="/static/images/29.jpg" alt="img29"/>
+                <figcaption>
+                    <h2>Lonely <span>Steve</span></h2>
+                    <p>Steve was afraid of the Boogieman. </p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-steve">
+                <img src="/static/images/33.jpg" alt="img33"/>
+                <figcaption>
+                    <h2>Lonely <span>Steve</span></h2>
+                    <p>Steve was afraid of the Boogieman.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-moses">
+                <img src="/static/images/24.jpg" alt="img24"/>
+                <figcaption>
+                    <h2>Cute <span>Moses</span></h2>
+                    <p>Moses loves to run after butterflies.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-moses">
+                <img src="/static/images/20.jpg" alt="img20"/>
+                <figcaption>
+                    <h2>Cute <span>Moses</span></h2>
+                    <p>Moses loves to run after butterflies.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-jazz">
+                <img src="/static/images/25.jpg" alt="img25"/>
+                <figcaption>
+                    <h2>Dynamic <span>Jazz</span></h2>
+                    <p>When Jazz starts to chase cars, the whole world stands still.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-jazz">
+                <img src="/static/images/6.jpg" alt="img06"/>
+                <figcaption>
+                    <h2>Dynamic <span>Jazz</span></h2>
+                    <p>When Jazz starts to chase cars, the whole world stands still.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-ming">
+                <img src="/static/images/9.jpg" alt="img09"/>
+                <figcaption>
+                    <h2>Funny <span>Ming</span></h2>
+                    <p>Ming sits in the corner the whole day. She's into crochet.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-ming">
+                <img src="/static/images/8.jpg" alt="img08"/>
+                <figcaption>
+                    <h2>Funny <span>Ming</span></h2>
+                    <p>Ming sits in the corner the whole day. She's into crochet.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-sarah">
+                <img src="/static/images/13.jpg" alt="img13"/>
+                <figcaption>
+                    <h2>Free <span>Sarah</span></h2>
+                    <p>Sarah likes to watch clouds. She's quite depressed.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-sarah">
+                <img src="/static/images/20.jpg" alt="img20"/>
+                <figcaption>
+                    <h2>Free <span>Sarah</span></h2>
+                    <p>Sarah likes to watch clouds. She's quite depressed.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-lexi">
+                <img src="/static/images/12.jpg" alt="img12"/>
+                <figcaption>
+                    <h2>Altruistic <span>Lexi</span></h2>
+                    <p>Each and every friend is special. Lexi won't hide a single cookie.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-lexi">
+                <img src="/static/images/3.jpg" alt="img03"/>
+                <figcaption>
+                    <h2>Altruistic <span>Lexi</span></h2>
+                    <p>Each and every friend is special. Lexi won't hide a single cookie.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-duke">
+                <img src="/static/images/27.jpg" alt="img27"/>
+                <figcaption>
+                    <h2>Messy <span>Duke</span></h2>
+                    <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-duke">
+                <img src="/static/images/17.jpg" alt="img17"/>
+                <figcaption>
+                    <h2>Messy <span>Duke</span></h2>
+                    <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-chico">
+                <img src="/static/images/15.jpg" alt="img15"/>
+                <figcaption>
+                    <h2>Silly <span>Chico</span></h2>
+                    <p>Chico's main fear was missing the morning bus.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-chico">
+                <img src="/static/images/4.jpg" alt="img04"/>
+                <figcaption>
+                    <h2>Silly <span>Chico</span></h2>
+                    <p>Chico's main fear was missing the morning bus.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <h2></h2>
+        <nav class="codrops-demos">
+            <a class="codrops-icon codrops-icon-prev" href="＃">
+                <span>前一页</span>
+            </a>
+            <span>1/50</span>
+
+            <a class="codrops-icon codrops-icon-drop" href="＃">
+                <span>后一页</span>
+            </a>
+        </nav>
+        <h2></h2>
+    </div>
+
+    #parse("common/copyright.vm")
+
+</div><!-- /container -->
+</body>
+</html>

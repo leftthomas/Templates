@@ -1,0 +1,233 @@
+#set($title="web_demo | 女生")
+
+#parse("common/header.vm")
+<link href="/static/css/demo.css" rel="stylesheet" type="text/css"/>
+<link href="/static/css/set1.css" rel="stylesheet" type="text/css"/>
+<script src="/static/js/essays_girl.js" type="text/javascript"></script>
+<body>
+<div class="container">
+    <div class="wrap">
+        #parse("common/menu.vm")
+    </div>
+
+    <header class="codrops-header">
+        <nav class="codrops-demos">
+            <a class="current-demo" href="/essays/girl">女生</a>
+            <a href="/essays/boy">男生</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-lily">
+                <img src="/static/images/12.jpg" alt="img12"/>
+                <figcaption>
+                    <div>
+                        <h2>Nice <span>Lily</span></h2>
+                        <p>Lily likes to play with crayons and pencils</p>
+                    </div>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-lily">
+                <img src="/static/images/1.jpg" alt="img1"/>
+                <figcaption>
+                    <div>
+                        <h2>Nice <span>Lily</span></h2>
+                        <p>Lily likes to play with crayons and pencils</p>
+                    </div>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-sadie">
+                <img src="/static/images/2.jpg" alt="img02"/>
+                <figcaption>
+                    <h2>Holy <span>Sadie</span></h2>
+                    <p>Sadie never took her eyes off me.She had a dark soul.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-sadie">
+                <img src="/static/images/14.jpg" alt="img14"/>
+                <figcaption>
+                    <h2>Holy <span>Sadie</span></h2>
+                    <p>Sadie never took her eyes off me. She had a dark soul.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-layla">
+                <img src="/static/images/6.jpg" alt="img06"/>
+                <figcaption>
+                    <h2>Crazy <span>Layla</span></h2>
+                    <p>When Layla appears, she brings an eternal summer along.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-layla">
+                <img src="/static/images/3.jpg" alt="img03"/>
+                <figcaption>
+                    <h2>Crazy <span>Layla</span></h2>
+                    <p>When Layla appears, she brings an eternal summer along.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-oscar">
+                <img src="/static/images/9.jpg" alt="img09"/>
+                <figcaption>
+                    <h2>Warm <span>Oscar</span></h2>
+                    <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-oscar">
+                <img src="/static/images/10.jpg" alt="img10"/>
+                <figcaption>
+                    <h2>Warm <span>Oscar</span></h2>
+                    <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-marley">
+                <img src="/static/images/11.jpg" alt="img11"/>
+                <figcaption>
+                    <h2>Sweet <span>Marley</span></h2>
+                    <p>Marley tried to convince her but she was not interested.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-marley">
+                <img src="/static/images/12.jpg" alt="img12"/>
+                <figcaption>
+                    <h2>Sweet <span>Marley</span></h2>
+                    <p>Marley tried to convince her but she was not interested.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-ruby">
+                <img src="/static/images/13.jpg" alt="img13"/>
+                <figcaption>
+                    <h2>Glowing <span>Ruby</span></h2>
+                    <p>Ruby did not need any help. Everybody knew that.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-ruby">
+                <img src="/static/images/14.jpg" alt="img14"/>
+                <figcaption>
+                    <h2>Glowing <span>Ruby</span></h2>
+                    <p>Ruby did not need any help. Everybody knew that.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-roxy">
+                <img src="/static/images/15.jpg" alt="img15"/>
+                <figcaption>
+                    <h2>Charming <span>Roxy</span></h2>
+                    <p>Roxy was my best friend. She'd cross any border for me.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-roxy">
+                <img src="/static/images/1.jpg" alt="img01"/>
+                <figcaption>
+                    <h2>Charming <span>Roxy</span></h2>
+                    <p>Roxy was my best friend. She'd cross any border for me.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-bubba">
+                <img src="/static/images/2.jpg" alt="img02"/>
+                <figcaption>
+                    <h2>Fresh <span>Bubba</span></h2>
+                    <p>Bubba likes to appear out of thin air.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-bubba">
+                <img src="/static/images/16.jpg" alt="img16"/>
+                <figcaption>
+                    <h2>Fresh <span>Bubba</span></h2>
+                    <p>Bubba likes to appear out of thin air.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-dexter">
+                <img src="/static/images/19.jpg" alt="img19"/>
+                <figcaption>
+                    <h2>Strange <span>Dexter</span></h2>
+                    <p>Dexter had his own strange way. You could watch him training ants.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-dexter">
+                <img src="/static/images/12.jpg" alt="img12"/>
+                <figcaption>
+                    <h2>Strange <span>Dexter</span></h2>
+                    <p>Dexter had his own strange way. You could watch him training ants.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-milo">
+                <img src="/static/images/11.jpg" alt="img11"/>
+                <figcaption>
+                    <h2>Faithful <span>Milo</span></h2>
+                    <p>Milo went to the woods. He took a fun ride and never came back.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-milo">
+                <img src="/static/images/3.jpg" alt="img03"/>
+                <figcaption>
+                    <h2>Faithful <span>Milo</span></h2>
+                    <p>Milo went to the woods. He took a fun ride and never came back.</p>
+                    <a href="/">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <h2></h2>
+        <nav class="codrops-demos">
+            <a class="codrops-icon codrops-icon-prev" href="＃">
+                <span>前一页</span>
+            </a>
+            <span>1/50</span>
+
+            <a class="codrops-icon codrops-icon-drop" href="＃">
+                <span>后一页</span>
+            </a>
+        </nav>
+        <h2></h2>
+    </div>
+
+    #parse("common/copyright.vm")
+
+</div><!-- /container -->
+</body>
+</html>
