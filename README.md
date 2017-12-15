@@ -34,14 +34,15 @@ This web application now can be accessed by going to `127.0.0.1:8080` in your br
 ## Modifies
 Open `generator/src/main/resources/generatorConfig.xml`, find
 
-```<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                   connectionURL="jdbc:mysql://127.0.0.1/database"
-                   userId="userId"
-                   password="password">
-   </jdbcConnection>
-   .........
-   .........
-   <table schema="database" tableName="users" domainObjectName="User"/>
+```
+<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                connectionURL="jdbc:mysql://127.0.0.1/database"
+                userId="userId"
+                password="password">
+</jdbcConnection>
+.........
+.........
+<table schema="database" tableName="users" domainObjectName="User"/>
 ```
 change your database name、userId、password and table name, then open the 
 right tab named `Maven Projects`, find `generator/Plugins/mybatis-generator`,
@@ -49,9 +50,10 @@ double click `mybatis-generator:generate` to generate DAO.
 
 Open `front/src/main/resources/application.properties`, find
 
-```jdbc.url=jdbc:mysql://127.0.0.1:3306/database?characterEncoding=UTF-8
-   jdbc.username=username
-   jdbc.password=password
+```
+jdbc.url=jdbc:mysql://127.0.0.1:3306/database?characterEncoding=UTF-8
+jdbc.username=username
+jdbc.password=password
 ```
 change your database name、username and password.
 
