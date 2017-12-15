@@ -5,7 +5,7 @@
 
 <generatorConfiguration>
     <classPathEntry
-            location="/Users/left/.m2/repository/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar"/>
+            location="~/.m2/repository/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar"/>
 
     <context id="DB2Tables" targetRuntime="MyBatis3">
 
@@ -32,6 +32,6 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!--账户管理-->
-        <table schema="database" tableName="users" domainObjectName="User"></table>
+        <table schema="database" tableName="users" domainObjectName="User"/>
     </context>
 </generatorConfiguration>

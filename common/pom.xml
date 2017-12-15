@@ -9,7 +9,6 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../</relativePath>
     </parent>
-    <groupId>com.left</groupId>
     <artifactId>common</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>common</name>
