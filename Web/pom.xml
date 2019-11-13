@@ -56,7 +56,7 @@
 
     <properties>
         <!-- 主要依赖库的版本定义 -->
-        <org.springframework-version>4.1.6.RELEASE</org.springframework-version>
+        <org.springframework-version>5.2.1.RELEASE</org.springframework-version>
         <mybatis.version>3.2.8</mybatis.version>
         <shiro.version>1.2.3</shiro.version>
         <bonecp.version>0.8.0.RELEASE</bonecp.version>
