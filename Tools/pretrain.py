@@ -1,6 +1,6 @@
 import argparse
 import warnings
-
+import torchvision.transforms as transforms
 import pandas as pd
 import torch
 import torch.nn as nn
@@ -12,9 +12,16 @@ from torchvision import datasets
 from tqdm import tqdm
 
 import utils
-from backbone import Model
+from model import Model
 
 warnings.filterwarnings("ignore")
+
+train_transform = transforms.Compose([transforms.RandomResizedCrop(224), transforms.RandomHorizontalFlip(),
+                                      transforms.ToTensor(),
+                                      transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
+
+val_transform = transforms.Compose([transforms.Resize(256), transforms.CenterCrop(224), transforms.ToTensor(),
+                                    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
 
 
 # train or val for one epoch
@@ -51,13 +58,13 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Train Model')
     parser.add_argument('--data_path', type=str, default='/home/data/imagenet/ILSVRC2012', help='Path to dataset')
     parser.add_argument('--batch_size', type=int, default=256, help='Number of images in each mini-batch')
-    parser.add_argument('--epochs', type=int, default=100, help='Number of sweeps over the dataset to train')
+    parser.add_argument('--epochs', type=int, default=90, help='Number of sweeps over the dataset to train')
 
     args = parser.parse_args()
     data_path, batch_size, epochs = args.data_path, args.batch_size, args.epochs
-    train_data = datasets.ImageFolder(root='{}/{}'.format(data_path, 'train'), transform=utils.train_transform)
+    train_data = datasets.ImageFolder(root='{}/{}'.format(data_path, 'train'), transform=train_transform)
     train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True, num_workers=16, pin_memory=True)
-    val_data = datasets.ImageFolder(root='{}/{}'.format(data_path, 'val'), transform=utils.val_transform)
+    val_data = datasets.ImageFolder(root='{}/{}'.format(data_path, 'val'), transform=val_transform)
     val_loader = DataLoader(val_data, batch_size=batch_size, shuffle=False, num_workers=16, pin_memory=True)
 
     model = Model(num_classes=1000).cuda()
