@@ -10,8 +10,6 @@ from torch.optim.lr_scheduler import StepLR
 from torch.utils.data import DataLoader
 from torchvision import datasets
 from tqdm import tqdm
-
-import utils
 from model import Model
 
 warnings.filterwarnings("ignore")
@@ -67,7 +65,7 @@ if __name__ == '__main__':
     val_data = datasets.ImageFolder(root='{}/{}'.format(data_path, 'val'), transform=val_transform)
     val_loader = DataLoader(val_data, batch_size=batch_size, shuffle=False, num_workers=16, pin_memory=True)
 
-    model = Model(num_classes=1000).cuda()
+    model = Model().cuda()
     flops, params = profile(model, inputs=(torch.randn(1, 3, 224, 224).cuda(),))
     flops, params = clever_format([flops, params])
     print('# Model Params: {} FLOPs: {}'.format(params, flops))
@@ -92,4 +90,4 @@ if __name__ == '__main__':
         data_frame.to_csv('results/statistics.csv', index_label='epoch')
         if val_acc_1 > best_acc:
             best_acc = val_acc_1
-            torch.save(model.state_dict(), 'results/model.pth')
+            torch.save(model.cpu().state_dict(), 'results/model.pth')
