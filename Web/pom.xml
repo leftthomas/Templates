@@ -77,7 +77,7 @@
         <joda-time.version>2.3</joda-time.version>
         <dozer.version>5.5.1</dozer.version>
         <freemarker.version>2.3.21</freemarker.version>
-        <junit.version>4.11</junit.version>
+        <junit.version>4.13.1</junit.version>
         <org.aspectj-version>1.7.0</org.aspectj-version>
         <nosqlunit.version>0.8.0</nosqlunit.version>
 
