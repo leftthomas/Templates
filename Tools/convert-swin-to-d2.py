@@ -4,6 +4,7 @@
 import pickle as pkl
 import sys
 import torch
+import math
 
 """
 Usage:
@@ -39,7 +40,11 @@ if __name__ == "__main__":
         k = k.replace("mlp.0", "mlp.fc1")
         k = k.replace("mlp.3", "mlp.fc2")
         print(old_k, "->", k)
-        newmodel[k] = obj.pop(old_k).detach().numpy()
+        value = obj.pop(old_k).detach()
+        if "relative_position_index" in k:
+            size = int(math.sqrt(value.shape[0]))
+            value = value.view(size, size)
+        newmodel[k] = value.numpy()
 
     res = {"model": newmodel, "__author__": "torchvision", "matching_heuristics": True}
 
